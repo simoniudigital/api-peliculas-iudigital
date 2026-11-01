@@ -192,4 +192,6 @@ Node.js · Express 5 · MongoDB · Mongoose · express-validator · dotenv · co
 
 ## Integrantes
 
-- Simón Castaño
+- Simón Castaño Ríos
+- Juan Pablo Gonzalez Gil
+- Luisa Fernanda Gómez Quiroz
