@@ -606,7 +606,7 @@
             "description": "",
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"serial\": \"PEL-001\",\n  \"titulo\": \"Interstellar\",\n  \"sinopsis\": \"Un grupo de exploradores viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad.\",\n  \"url\": \"https://peliculas.iudigital.edu.co/interstellar\",\n  \"imagenPortada\": \"https://picsum.photos/300/450\",\n  \"anioEstreno\": 2014,\n  \"genero\": \"{{generoId}}\",\n  \"director\": \"{{directorId}}\",\n  \"productora\": \"{{productoraId}}\",\n  \"tipo\": \"{{tipoId}}\"\n}",
+              "raw": "{\n  \"serial\": \"PEL-001\",\n  \"titulo\": \"Interstellar\",\n  \"sinopsis\": \"Un grupo de exploradores viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad.\",\n  \"url\": \"https://peliculas.iudigital.edu.co/interstellar\",\n  \"imagenPortada\": \"https://placehold.co/300x450/png\",\n  \"anioEstreno\": 2014,\n  \"genero\": \"{{generoId}}\",\n  \"director\": \"{{directorId}}\",\n  \"productora\": \"{{productoraId}}\",\n  \"tipo\": \"{{tipoId}}\"\n}",
               "options": {
                 "raw": {
                   "language": "json"

@@ -5,6 +5,7 @@ const app = require('./app');
 const { getConnection } = require('./db/db-connection');
 const Genero = require('./models/Genero');
 const Tipo = require('./models/Tipo');
+const { generos, tipos } = require('./datos-iniciales');
 
 const PORT = process.env.PORT || 4000;
 
@@ -12,8 +13,8 @@ const main = async () => {
   const mongo = await MongoMemoryServer.create();
   await getConnection(mongo.getUri() + 'peliculas_iudigital');
 
-  await Genero.insertMany(['Acción', 'Aventura', 'Ciencia ficción', 'Drama', 'Terror'].map((nombre) => ({ nombre })));
-  await Tipo.insertMany([{ nombre: 'Película' }, { nombre: 'Serie' }]);
+  await Genero.insertMany(generos);
+  await Tipo.insertMany(tipos);
   console.log('Datos iniciales cargados: 5 géneros y 2 tipos');
 
   app.listen(PORT, () => console.log(`Servidor (BD en memoria) escuchando en http://localhost:${PORT}`));

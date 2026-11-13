@@ -85,7 +85,7 @@ test('Director, Productora y Tipo: crear y actualizar', async () => {
 test('Media: CRUD completo con reglas del caso de estudio', async () => {
   const pelicula = {
     serial: 'PEL-001', titulo: 'Oppenheimer', sinopsis: 'Biografía de J. Robert Oppenheimer',
-    url: 'https://peliculas.iudigital.edu.co/oppenheimer', imagenPortada: 'https://picsum.photos/300/450',
+    url: 'https://peliculas.iudigital.edu.co/oppenheimer', imagenPortada: 'https://placehold.co/300x450/png',
     anioEstreno: 2023, genero: ids.genero, director: ids.director, productora: ids.productora, tipo: ids.tipo,
   };
   let r = await api('POST', '/api/medias', pelicula);

@@ -166,7 +166,7 @@ Las respuestas de media incluyen los datos del género, director, productora y t
   "titulo": "Interstellar",
   "sinopsis": "Un grupo de exploradores viaja a través de un agujero de gusano.",
   "url": "https://peliculas.iudigital.edu.co/interstellar",
-  "imagenPortada": "https://picsum.photos/300/450",
+  "imagenPortada": "https://placehold.co/300x450/png",
   "anioEstreno": 2014,
   "genero": "<id de un género activo>",
   "director": "<id de un director activo>",
