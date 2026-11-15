@@ -104,7 +104,7 @@ tests/api.test.js          # Pruebas automáticas de extremo a extremo
 Requisitos: Node.js 20.19 o superior y una base de datos MongoDB (local o [MongoDB Atlas](https://www.mongodb.com/atlas)).
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/simoniudigital/api-peliculas-iudigital.git api-peliculas
 cd api-peliculas
 npm install
 cp .env.example .env      # editar MONGO_URI con la cadena de conexión
