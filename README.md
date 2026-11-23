@@ -118,6 +118,17 @@ El servidor queda disponible en `http://localhost:4000`.
 
 **Pruebas automáticas:** `npm test` ejecuta las pruebas de extremo a extremo de los cinco módulos.
 
+## Despliegue en la nube (EA3)
+
+La API está desplegada en **Render** (Web Service, plan gratuito) con la base de datos en **MongoDB Atlas** (clúster M0 gratuito):
+
+- API en producción: https://api-peliculas-iudigital-lb66.onrender.com (por ejemplo, [`/api/medias`](https://api-peliculas-iudigital-lb66.onrender.com/api/medias))
+- Frontend que la consume: https://frontend-peliculas-iudigital-9eem.onrender.com
+
+Configuración en Render: build `npm ci --omit=dev`, start `npm start`, Node 22 (archivo `.node-version`) y la variable de entorno `MONGO_URI` con la cadena de conexión de Atlas. Al arrancar con una base de datos vacía, la API carga automáticamente los géneros y tipos iniciales.
+
+> En el plan gratuito de Render el servicio se suspende tras 15 minutos sin uso; la primera petición después de eso puede tardar unos 50 segundos.
+
 ## Endpoints
 
 Todos los módulos siguen la misma convención REST:
